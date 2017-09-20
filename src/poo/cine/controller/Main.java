@@ -21,8 +21,8 @@ public class Main {
         
         // A SessionFactory is set up once for an application!
 	final StandardServiceRegistry registry = new StandardServiceRegistryBuilder()
-			.configure("resources/hibernate.cfg.xml") // configures settings from hibernate.cfg.xml
-			.build();
+			.configure("resources/hibernate.cfg.xml").build(); // configures settings from hibernate.cfg.xml
+
 	try {
             sessionFactory = new MetadataSources( registry ).buildMetadata().buildSessionFactory();
 	}
